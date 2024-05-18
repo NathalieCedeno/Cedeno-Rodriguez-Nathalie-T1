@@ -1,0 +1,84 @@
+<div class="card overflow-hidden rounded-2 p-1 bg-light" style="width: 700px; height: 390px;">
+    <div class="card-body p-0">
+        <div class="row row-cols-2 h-100">
+            <div class="col-3">
+                <img src="assets/image/banner.png"
+                    class="w-100 h-100 object-fit-cover rounded-start-2 border border-light shadow-sm" alt="image">
+            </div>
+            <div class="col-9 p-1">
+                <h1 class="m-0 fs-4 text-center">Datos requeridos</h1>
+                <form [formGroup]="form" (ngSubmit)="agregar()">
+                    <div class=" my-3 pe-4">
+                        <div class="row row-cols-2 mt-3">
+                            <div class="mb-3">
+                                <label class="form-label">Nombre</label>
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-pencil-fill"></i>
+                                    </span>
+                                    <input type="text" class="form-control" formControlName="nombre" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Precio</label>
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-currency-dollar"></i>
+                                    </span>
+                                    <input type="number" class="form-control" formControlName="precio" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-cols-2 mt-3">
+                            <div class="mb-3">
+                                <label class="form-label">Expiración</label>
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-calendar-check"></i>
+                                    </span>
+                                    <input type="date" class="form-control" formControlName="expiracion" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Categoría</label>
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-thunderbolt-fill"></i>
+                                    </span>
+                                    <select class="form-control" formControlName="categoria" required>                                    
+                                        @for (item of categorias; track $index) {
+                                            <option [value]="item.id">{{item.categoria}}</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-cols-2 mt-3">
+                            <div class="mb-3">
+                                <label class="form-label">Color dominante</label>
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-calendar-check"></i>
+                                    </span>
+                                    <input type="color" class="form-control" style="height: 2rem;" formControlName="color" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Correo proveedor</label>
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </span>
+                                    <input type="email" class="form-control" formControlName="correo" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4 btn-submit">
+                            <button type="submit" [disabled]="this.form.invalid" class="btn btn-outline-dark btn-sm">Registrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

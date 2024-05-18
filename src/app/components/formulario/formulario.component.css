@@ -1,0 +1,28 @@
+h1 {
+    font-family: "Carter One", system-ui, sans-serif;
+    height: 2rem;
+    font-size: 2.5rem;
+}
+
+.btn-group label span {
+    font-family: "Carter One", system-ui, sans-serif;    
+}
+
+.form-label {
+    font-family: "Carter One", system-ui, sans-serif;
+    font-size: x-small;
+    margin: 0;
+}
+
+.card-blur {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.btn-submit {
+    font-family: "Carter One", system-ui, sans-serif;
+    padding: 0 .8rem;
+}

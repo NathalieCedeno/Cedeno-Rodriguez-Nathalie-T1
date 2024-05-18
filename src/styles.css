@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+
+.background-image {
+    background: url('/assets/image/background.png');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

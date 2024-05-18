@@ -1,0 +1,23 @@
+h2 {
+    font-family: "Carter One", system-ui, sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+h5 {
+    font-family: "Carter One", system-ui, sans-serif;
+    font-size: 3.5rem;
+    color: #333;
+}
+
+p {
+    font-size: small;
+}
+
+a {
+    font-family: "Carter One", system-ui, sans-serif;    
+}
+
+.card-footer {
+    font-size: x-small;
+}

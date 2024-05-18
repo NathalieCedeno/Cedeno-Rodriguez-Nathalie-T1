@@ -1,0 +1,11 @@
+<div class="container-fluid w-100 vh-100 background-image p-0 d-flex justify-content-center align-items-center">
+    <div class="card w-25 text-center">
+        <h2 class="card-header">Bodega</h2>
+        <div class="card-body">
+            <h5 class="card-title">{{cantidad}}</h5>
+            <p class="card-text pt-3 px-4 font-monospace">Cantidad de productos registrados dentro de la bodega</p>
+            <a routerLink="/" class="btn btn-sm w-50 btn-outline-dark mt-3">Regresar</a>
+        </div>
+        <div class="card-footer text-muted">{{ hoy | date:'dd/MM/yyyy' }}</div>
+    </div>
+</div>
